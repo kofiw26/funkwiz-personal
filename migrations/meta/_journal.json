@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1793572744170,
+      "tag": "0000_teacher_auth_and_quizzes",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1793574865006,
+      "tag": "0001_live_sessions",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1793581636081,
+      "tag": "0002_fancy_microchip",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1793618913038,
+      "tag": "0003_school_workspaces",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1793621736622,
+      "tag": "0004_workspace_indexes",
+      "breakpoints": true
+    }
+  ]
+}

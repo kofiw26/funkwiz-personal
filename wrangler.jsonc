@@ -1,0 +1,40 @@
+{
+  "name": "funkwiz-personal",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_id": "6c5f8f12-a854-4691-aecf-81eac1645e10",
+      "database_name": "funkwiz-personal",
+      "migrations_dir": "migrations",
+    },
+  ],
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "compatibility_date": "2025-09-02",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "src/server.ts",
+  "observability": {
+    "enabled": true,
+  },
+  "upload_source_maps": true,
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "LIVE_ROOMS",
+        "class_name": "GameRoom",
+      },
+      {
+        "name": "LIVE_JOIN_LIMITER",
+        "class_name": "JoinLimiter",
+      },
+    ],
+  },
+  "migrations": [
+    {
+      "tag": "v1-live-rooms",
+      "new_sqlite_classes": ["GameRoom", "JoinLimiter"],
+    },
+  ],
+  "vars": {
+    "FUNKWIZ_MODE": "personal",
+  },
+}
